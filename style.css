@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;600;700&display=swap');
+
+:root {
+    --dark-brown: #E8CEA2;
+    --lightest-yellow: #FFFAD7;
+    --darkest-navy: #293039;
+    --dark-coral: #A85338;
+    --medium-coral: #E08264;
+    --lightest-coral: #F6A58B;
+    --white: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--medium-coral);
+    color: var(--lightest-yellow);
+}
+
+body {
+    background-color: var(--darkest-navy);
+    color: var(--lightest-yellow);
+}
+
+a {
+    text-decoration: none;
+}
+button, a, .nav__profile-img {
+    cursor: pointer;
+}
+
+i {
+    display: flex;
+    font-size: 18px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.row_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, i, a, textarea, input {
+    color: var(--lightest-yellow);
+}
+input[type="text"] {
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+input {
+    border: none;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+color: var(--white);
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/*
+
+NAVIGATION
+
+*/
+nav {
+    height: 80px;
+    padding: 12px 24px;
+}
+
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__left, .nav__links, .nav__right, .nav__accounts{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__logo {
+    width: 100px;
+    margin-right: 8px;
+}
+
+.nav__search-bar {
+    border: 1px solid var(--lightest-yellow);
+    padding: 8px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease;
+}
+
+.nav__search-bar:hover {
+border-color: var(--lightest-coral);
+border-width: 2px;
+}
+
+.nav__searchbtn, .nav__notifbtn {
+    transition: all 300ms ease;
+}
+
+.nav__searchbtn:active, .nav__notifbtn:active {
+    transform: scale(0.8);
+}
+
+.nav__search {
+    background-color: transparent;
+    width: 100px;
+    margin-right: 8px;
+}
+
+
+.nav__link--list {
+    margin: 0 8px;
+}
+
+.nav__link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    color: var(--medium-coral);
+    font-weight: 700;
+}
+
+.nav__accounts {
+    margin-left: 16px; 
+}
+
+.nav__profile-img {
+    width: 42px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+/*
+
+HEADER
+
+*/
+
+#landing {
+    min-height: 100vh;
+}
+
+.header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+ .header__icon {
+    width:  150px;
+ }
+
+ header {
+    width: 50%;
+    padding-left: 34px;
+    margin-top: 20%;
+
+ }
+ .header__top10 {
+    width: 50px;
+    margin-right: 12px;
+ }
+
+ .header__title {
+    font-size: 72px;
+ }
+
+ .header__part1 {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+ }
+
+ .header__part2--para {
+font-size: 18px;
+margin-bottom: 16px;
+ }
+
+ .header__part3 {
+    display: flex;
+    align-items: center;
+ }
+
+ .values__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+ }
+
+
+.btn-coral {
+    color: var(--lightest-yellow);
+    background: var(--medium-coral);
+    padding: 8px 18px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn-coral:hover, .btn-yellow:hover {
+    opacity: 0.8;
+}
+.play {
+    margin-right: 16px;
+}
+
+.header__btn {
+margin-left: 4px;
+}
+
+.fi-rr-interrogation, .more_info {
+    color: var(--darkest-navy);
+} 
+
+.btn-yellow {
+    display: flex;
+    align-items: center;
+    color: var(--dark-coral);
+    background: rgba(255, 250, 215, 0.6);
+    padding: 8px 18px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
