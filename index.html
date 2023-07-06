@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/m_icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Assets/m_icon/favicon-16x16.png">
     <link rel="manifest" href="Assets/m_icon/site.webmanifest">
+
+    <!--  Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+
     <title>Moviefy.</title>
 </head>
 <body>
@@ -77,8 +84,146 @@
         </div>
     </header>
    </section>
+   <main>
+    <section id="genres">
+        <div class="container">
+            <div class=" genre__buttons">
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/action_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Action</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/comedy_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Comedy</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/drama_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Drama</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/fantasy_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Fantasy</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/horror_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Horror</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="Assets/dark_mode--icons/romance_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Romance</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="popularshows">
+     <div class="container">
+        <div >
+            <div class="popular__show--titlebar">
+                <h4 class="popular__show--title">Top 10 Shows in Canada Today</h4>
+                <div class="popular__show--buttons">
+                    <i class="fi fi-rr-angle-circle-left"></i>
+                    <i class="fi fi-rr-angle-circle-right"></i>
+                </div>
+            </div>
+            <div>
+                <div class="popular__show--posters">
+                    
+                    <div class="popular__show--poster">
+                        <figure class="poster__img">
+                            <img src="Assets/sunset_dream_poster.svg" alt="">
+                        </figure>
+                        <div class="poster__info">
+                            <h3 class="poster__title">Sunset Dreams</h3>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div>
+                    <div class="popular__show--poster">
+                        <figure class="poster__img">
+                            <img src="Assets/sunset_dream_poster.svg" alt="">
+                        </figure>
+                        <div class="poster__info">
+                            <h3 class="poster__title">Sunset Dreams</h3>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div>
+                    <div class="popular__show--poster">
+                        <figure class="poster__img">
+                            <img src="Assets/sunset_dream_poster.svg" alt="">
+                        </figure>
+                        <div class="poster__info">
+                            <h3 class="poster__title">Sunset Dreams</h3>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div>
+
+                    <div class="popular__show--poster">
+                        <figure class="poster__img">
+                            <img src="Assets/sunset_dream_poster.svg" alt="">
+                        </figure>
+                        <div class="poster__info">
+                            <h3 class="poster__title">Sunset Dreams</h3>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div>
+                    <div class="popular__show--poster">
+                        <figure class="poster__img">
+                            <img src="Assets/sunset_dream_poster.svg" alt="">
+                        </figure>
+                        <div class="poster__info">
+                            <h3 class="poster__title">Sunset Dreams</h3>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div>
+                </div>
+     
+            </div>
+        </div>
+     </div>
+    </section>
+        <!-- <div class="swiper" id="swiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure class="poster__img">
+                        <img src="Assets/sunset_dream_poster.svg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="poster__img">
+                        <img src="Assets/photo1.jpeg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="poster__img">
+                        <img src="Assets/photo2.webp" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="poster__img">
+                        <img src="Assets/photo3.jpeg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          
+        </div>
+     -->
+   </main>
  
 
-    <script src="script.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+</script>
+<script src="script.js"></script>   
 </body>
 </html>
