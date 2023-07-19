@@ -1,16 +1,22 @@
-// new Swiper('#swiper-1', {
-//     effect: 'fade',
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction:false
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-//     lazyLoading: true,
-//     loop: true
-// });
+new Swiper('.swiper', {
+    slidesPerView: 5,
+    spaceBetween: 12,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction:false
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.nav-next',
+      prevEl: '.nav-prev',
+    },
+    keyboard: true,
+});
 
 // new Swiper('#swiper-2', {
 //     slidesPerView: 1.5,
