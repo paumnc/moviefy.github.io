@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/m_icon/favicon-32x32.png">
@@ -36,7 +37,24 @@
             <li class="nav__link--list"> <a href="#" class="nav__link">New & Popular</a></li>
             <li class="nav__link--list"> <a href="#" class="nav__link">My List</a></li>
             </ul>
+
+       
+            <div class="small__nav">
+                <button class="btn_menu--close" onclick="closeMenu()">
+                    <i class="fi fi-rr-cross"></i>
+                </button>
+                <ul class=" nav__links">
+                    <li class="nav__link--list"> <a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__link--list"> <a href="#" class="nav__link">Movies</a></li>
+                    <li class="nav__link--list"> <a href="#" class="nav__link">TV Shows</a></li>
+                    <li class="nav__link--list"> <a href="#" class="nav__link">New & Popular</a></li>
+                    <li class="nav__link--list"> <a href="#" class="nav__link">My List</a></li>
+                    </ul>
+            </div>
             <div class="nav__right">
+                <button class="btn_menu" onclick="openMenu()">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </button>
                 <button class="nav__notifbtn">
                     <i class="fi fi-rr-bell-ring"></i>
                 </button>
@@ -83,7 +101,7 @@
    </section>
    <main>
     <section id="genres">
-        <div class="container">
+        <div class="container row_column">
             <div class=" genre__buttons">
               <div class="genre__button">
                 <figure class="genre__button--imgs">
@@ -121,10 +139,10 @@
                 </figure>
                 <p class="genre__name">Romance</p>
               </div>
+            </div>
               <div class="nav__search-bar">
                 <input type="text" class="nav__search" placeholder="Search">
                 <button class="nav__searchbtn"><i class="fi fi-rr-search"></i></button>
-            </div>
             </div>
         </div>
     </section>
@@ -757,9 +775,56 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
             </div>
     </section>
+    <footer class="row_column">
+        <figure class="footer__logo">
+            <img src="Assets/moviefy__logo2.svg" alt="" class="footer__logo--img">
+        </figure>
+        <div class="footer__icons">
+            <a href="#" class="footer__icon--i">
+                <i class="fi fi-brands-facebook"></i>
+            </a>
+            <a href="#" class="footer__icon--i">
+                <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a href="#" class="footer__icon--i">
+               <i class="fi fi-brands-twitter"></i>
+            </a>
+            <a href="#" class="footer__icon--i">
+                <i class="fi fi-brands-youtube"></i>
+            </a>
+            <a href="#" class="footer__icon--i">
+                <i class="fi fi-brands-tik-tok"></i>
+            </a>  
+        </div>
+        <ul class="footer__links">
+            <li class="footer__link">
+                <a href="#">Contact Us</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Privacy</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Help Center</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Jobs</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Gift Cards</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Legal Notices</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Media Center</a>
+            </li>
+            <li class="footer__link">
+                <a href="#">Corporate Information</a>
+            </li>
+        </ul>
+    </footer>
 </main>
  
 

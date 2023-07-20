@@ -1,6 +1,28 @@
 new Swiper('.swiper', {
     slidesPerView: 5,
     spaceBetween: 12,
+    breakpoints: {
+        1400: {
+            slidesPerView: 4, 
+            spaceBetween: 0,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+        800: {
+            slidesPerView: 3,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+        400: {
+            slidesPerView: 1,
+        }
+
+
+
+
+    },
     centeredSlides: true,
     autoplay: {
         delay: 2500,
@@ -17,6 +39,13 @@ new Swiper('.swiper', {
     },
     keyboard: true,
 });
+
+function openMenu() {
+    document.body.classList += "menu--open";
+}
+function closeMenu() {
+    document.body.classList.remove('menu--open');
+}
 
 // new Swiper('#swiper-2', {
 //     slidesPerView: 1.5,
