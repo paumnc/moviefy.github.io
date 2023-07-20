@@ -3,14 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <link rel="stylesheet" href="moviestyle.css">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/m_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/m_icon/favicon-16x16.png">
+    <link rel="manifest" href="/Assets/m_icon/site.webmanifest">
+
+    <title>Moviefy.</title>
 </head>
 <body>
+   <section id="landing">
     
+    <nav>
+        <div class="nav__container">
+            <div class="nav__left">
+                <figure class="nav__logo">
+                    <img src="/Assets/moviefy__logo2.svg" class="nav__logo--img" alt="">
+                </figure>
+               
+            </div>
+            <ul class="nav__links--hidden nav__links">
+            <li class="nav__link--list"> <a href="#" class="nav__link">Home</a></li>
+            <li class="nav__link--list"> <a href="#" class="nav__link">Movies</a></li>
+            <li class="nav__link--list"> <a href="#" class="nav__link">TV Shows</a></li>
+            <li class="nav__link--list"> <a href="#" class="nav__link">New & Popular</a></li>
+            <li class="nav__link--list"> <a href="#" class="nav__link">My List</a></li>
+            </ul>
+
+       
+            <div class="small__nav">
+                <button class="btn_menu--close" onclick="closeMenu()">
+                    <i class="fi fi-rr-cross"></i>
+                </button>
+                <ul class=" nav__links">
+                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">Movies</a></li>
+                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">TV Shows</a></li>
+                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">New & Popular</a></li>
+                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">My List</a></li>
+                    </ul>
+            </div>
+            <div class="nav__right">
+                <button class="btn_menu" onclick="openMenu()">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </button>
+                <button class="nav__notifbtn">
+                    <i class="fi fi-rr-bell-ring"></i>
+                </button>
+                <div class="nav__accounts">
+                    <figure class="nav__profile-img">
+                        <img src="/Assets/profile__photo.png" alt="" class="profile__img">
+                    </figure>
+                    <i class="fi fi-rr-caret-up"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+ 
+    </header>
+   </section>
+   <main>
+    <section id="genres">
+        <div class="container row_column">
+            <div class=" genre__buttons">
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/action_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Action</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/comedy_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Comedy</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/drama_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Drama</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/fantasy_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Fantasy</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/horror_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Horror</p>
+              </div>
+              <div class="genre__button">
+                <figure class="genre__button--imgs">
+                    <img src="/Assets/dark_mode--icons/romance_icon.svg" alt="" class="genre__button--img">
+                </figure>
+                <p class="genre__name">Romance</p>
+              </div>
+            </div>
+            <div class="search__header">
+                <div class="search__title">
+                    <h1>All: <span class="search__content">Witcher Movies</span></h1>
+                    
+                </div>
+                <div class="nav__search-bar">
+                    <input type="text" class="nav__search" placeholder="Search">
+                    <a href="movies/movies.html" target="_blank" class="nav__searchbtn"><i class="fi fi-rr-search"></i></a>
+                </div>
+            </div>
+            <div class="shows row">
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                       <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                       <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                    <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                    <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                    <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+                <div class="shows__content">
+                    <figure class="shows__poster">
+                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                    </figure>
+                    <div class="poster__description">
+                        <h4 class="poster__title">Sunset Dream</h4>
+                        <p class="poster__year">2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="row_column">
+    <figure class="footer__logo">
+        <img src="Assets/moviefy__logo2.svg" alt="" class="footer__logo--img">
+    </figure>
+    <div class="footer__icons">
+        <a href="#" class="footer__icon--i">
+            <i class="fi fi-brands-facebook"></i>
+        </a>
+        <a href="#" class="footer__icon--i">
+            <i class="fi fi-brands-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon--i">
+           <i class="fi fi-brands-twitter"></i>
+        </a>
+        <a href="#" class="footer__icon--i">
+            <i class="fi fi-brands-youtube"></i>
+        </a>
+        <a href="#" class="footer__icon--i">
+            <i class="fi fi-brands-tik-tok"></i>
+        </a>  
+    </div>
+    <ul class="footer__links">
+        <li class="footer__link">
+            <a href="#">Contact Us</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Privacy</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Help Center</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Jobs</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Gift Cards</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Legal Notices</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Media Center</a>
+        </li>
+        <li class="footer__link">
+            <a href="#">Corporate Information</a>
+        </li>
+    </ul>
+</footer>
 
 
-
-
-    
+    <script src="moviescript.js"></script>   
 </body>
 </html>
