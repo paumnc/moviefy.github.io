@@ -27,7 +27,7 @@
                
             </div>
             <ul class="nav__links--hidden nav__links">
-            <li class="nav__link--list"> <a href="#" class="nav__link">Home</a></li>
+            <li class="nav__link--list"> <a href="/index.html" class="nav__link">Home</a></li>
             <li class="nav__link--list"> <a href="#" class="nav__link">Movies</a></li>
             <li class="nav__link--list"> <a href="#" class="nav__link">TV Shows</a></li>
             <li class="nav__link--list"> <a href="#" class="nav__link">New & Popular</a></li>
@@ -109,76 +109,36 @@
             </div>
             <div class="search__header">
                 <div class="search__title">
-                    <h1>All: <span class="search__content">Witcher Movies</span></h1>
+                    <h1>All Movies/Series: <span class="search__content"></span></h1>
                     
                 </div>
-                <div class="nav__search-bar">
-                    <input type="text" class="nav__search" placeholder="Search">
-                    <a href="movies/movies.html" target="_blank" class="nav__searchbtn"><i class="fi fi-rr-search"></i></a>
-                </div>
+                <form action="" id="movie__searchbox" class="nav__search-bar" onsubmit="browse(event)">
+                    <input type="text"  id="searchbar" class="nav__search" placeholder="Search" />
+                    <button type="submit"  class="nav__searchbtn"><i class="fi fi-rr-search"></i></button>
+                </form>
             </div>
-            <div class="shows row">
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                       <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
+            <div class="row">
+                <div class="loading">
+                    <i class="loading__icon fi fi-rr-rotate-right"></i>
                 </div>
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                       <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
-                </div>
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                    <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
-                </div>
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                    <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
-                </div>
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                    <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
-                </div>
-                <div class="shows__content">
-                    <figure class="shows__poster">
-                        <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
-                    </figure>
-                    <div class="poster__description">
-                        <h4 class="poster__title">Sunset Dream</h4>
-                        <p class="poster__year">2023</p>
-                    </div>
+                <div class="shows">
+                    <!-- <div class="shows__content">
+                        <figure class="shows__poster">
+                            <img src="/Assets/sunset_dream_poster.svg" alt="" class="poster">
+                        </figure>
+                        <div class="poster__description">
+                            <h4 class="poster__title">Sunset Dream</h4>
+                            <p class="poster__year">2023</p>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
-</main>
+
 <footer class="row_column">
     <figure class="footer__logo">
-        <img src="Assets/moviefy__logo2.svg" alt="" class="footer__logo--img">
+        <img src="/Assets/moviefy__logo2.svg" alt="" class="footer__logo--img">
     </figure>
     <div class="footer__icons">
         <a href="#" class="footer__icon--i">
@@ -225,7 +185,7 @@
     </ul>
 </footer>
 
-
+</main>
     <script src="moviescript.js"></script>   
 </body>
 </html>

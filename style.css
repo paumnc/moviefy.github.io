@@ -614,20 +614,12 @@ p, .header__part2--para {
     margin: 12px;
 }
 
+.footer__links {
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 950px) {
-    .header__title {
-        font-size: 42px;
-    }
- 
-    #genres {
-        margin-top: 0;
-    }
-    .footer__links {
-        flex-direction: column;
-    }
 }
+
 
 @media only screen and (max-width: 950px) {
     h4 {
@@ -648,6 +640,7 @@ p, .header__part2--para {
         width: 15px;
         margin-right: 6;
     }
+  
  
     .footer__link {
         font-size: 12px;

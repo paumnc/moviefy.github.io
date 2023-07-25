@@ -53,6 +53,7 @@ li {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 45px;
 }
 
 
@@ -102,6 +103,15 @@ color: var(--white);
 button {
     background: none;
     border: none;
+}
+main {
+    position: relative;
+    min-height: 100vh;
+
+}
+
+section {
+    padding-bottom: 56px;
 }
 
 
@@ -255,6 +265,37 @@ border-color: var(--lightest-coral);
     background-color: transparent;
 }
 
+/*
+
+Loading
+
+*/
+
+.block .loading {
+    visibility: visible;
+}
+
+.loading {
+    visibility: hidden;
+}
+
+.loading__icon {
+    font-size: 48px;
+    animation: rotate 800ms infinite linear;
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
 /* 
 
 RESULTS
@@ -263,6 +304,7 @@ RESULTS
 .shows {
     display: flex;
    flex-wrap: wrap;
+   max-width: 1200px;
     
 }
 .shows__content {
@@ -275,6 +317,7 @@ RESULTS
 
 .shows__poster {
     width: 250px;
+    /* height: 375px; */
     border-radius: 20px;
     transition: all 300ms ease;
 }
@@ -293,7 +336,7 @@ Footer
 
 */
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
