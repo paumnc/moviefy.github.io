@@ -32,10 +32,10 @@
             </div>
             <ul class="nav__links--hidden nav__links">
             <li class="nav__link--list"> <a href="#" class="nav__link">Home</a></li>
-            <li class="nav__link--list"> <a href="#" class="nav__link">Movies</a></li>
-            <li class="nav__link--list"> <a href="#" class="nav__link">TV Shows</a></li>
-            <li class="nav__link--list"> <a href="#" class="nav__link">New & Popular</a></li>
-            <li class="nav__link--list"> <a href="#" class="nav__link">My List</a></li>
+            <li class="nav__link--list"> <a href="movies/movies.html" class="nav__link">Movies</a></li>
+            <li class="nav__link--list"> <a href="#tvshows" class="nav__link">TV Shows</a></li>
+            <li class="nav__link--list"> <a href="#newrelease" class="nav__link">New & Popular</a></li>
+            <li class="nav__link--list"> <a href="#mylist" class="nav__link">My List</a></li>
             </ul>
 
        
@@ -45,7 +45,7 @@
                 </button>
                 <ul class=" nav__links">
                     <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">Movies</a></li>
+                    <li class="nav__link--list" onclick="closeMenu()"> <a  class="nav__link">Movies</a></li>
                     <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">TV Shows</a></li>
                     <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">New & Popular</a></li>
                     <li class="nav__link--list" onclick="closeMenu()"> <a href="#" class="nav__link">My List</a></li>
@@ -140,9 +140,9 @@
                 <p class="genre__name">Romance</p>
               </div>
             </div>
-              <form class="nav__search-bar">
-                <input type="text" id="movie__searchbox" class="nav__search" placeholder="Search">
-                <a href="movies/movies.html" class="nav__searchbtn"><i class="fi fi-rr-search"></i></a>
+              <form class="nav__search-bar" id="movie__searchbox">
+                <input type="text" id="searchbar" class="nav__search" placeholder="Search" />
+                <button class="nav__searchbtn"><i class="fi fi-rr-search"></i></button>
               </form>
         </div>
     </section>
@@ -150,7 +150,132 @@
          <div class="container">
                 <div>
                     <div class="popular__show--titlebar">
-                        <h4 class="popular__show--title">Top 10 Shows in Canada Today</h4>
+                        <h4 id="tvshows" class="popular__show--title">Top 10 Shows in Canada Today</h4>
+                    </div>
+                    <div class="swiper">
+                        <div id="swiper1" class="popular__show--posters swiper-wrapper">
+                            
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sunset_dream_poster.svg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/photo1.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/photo2.webp" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/photo3.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/1.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/2.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/3.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/4.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/6.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/7.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/8.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            <div class="popular__show--poster swiper-slide">
+                                <figure class="poster__img">
+                                    <img src="Assets/sample_photos/9.jpeg" alt="">
+                                </figure>
+                                <figcaption class="poster__info">
+                                    <h3 class="poster__title">Sunset Dreams</h3>
+                                    <p class="poster__year">2023</p>
+                                </figcaption>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-custom-nav">
+                            <div class="nav-next"> <i class="fi fi-rr-angle-circle-left"></i></div>
+                            <div class="nav-prev">  <i class="fi fi-rr-angle-circle-right"></i></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="popular__show--titlebar">
+                        <h4 id="mylist" class="popular__show--title">My list</h4>
                     </div>
                     <div class="swiper">
                         <div class="popular__show--posters swiper-wrapper">
@@ -275,132 +400,7 @@
                 </div>
                 <div>
                     <div class="popular__show--titlebar">
-                        <h4 class="popular__show--title">My list</h4>
-                    </div>
-                    <div class="swiper">
-                        <div class="popular__show--posters swiper-wrapper">
-                            
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sunset_dream_poster.svg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/photo1.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/photo2.webp" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/photo3.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/1.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/2.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/3.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/4.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/6.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/7.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/8.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            <div class="popular__show--poster swiper-slide">
-                                <figure class="poster__img">
-                                    <img src="Assets/sample_photos/9.jpeg" alt="">
-                                </figure>
-                                <figcaption class="poster__info">
-                                    <h3 class="poster__title">Sunset Dreams</h3>
-                                    <p class="poster__year">2023</p>
-                                </figcaption>
-                            </div>
-                            
-                        </div>
-                        <div class="swiper-custom-nav">
-                            <div class="nav-next"> <i class="fi fi-rr-angle-circle-left"></i></div>
-                            <div class="nav-prev">  <i class="fi fi-rr-angle-circle-right"></i></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="popular__show--titlebar">
-                        <h4 class="popular__show--title">New Release</h4>
+                        <h4 id="newrelease" class="popular__show--title">New Release</h4>
                     </div>
                     <div class="swiper">
                         <div class="popular__show--posters swiper-wrapper">

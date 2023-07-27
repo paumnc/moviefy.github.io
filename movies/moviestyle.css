@@ -273,6 +273,7 @@ Loading
 
 .block .loading {
     visibility: visible;
+    display: block;
 }
 
 .loading {

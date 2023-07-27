@@ -1,4 +1,61 @@
 
+const searchBox = document.getElementById(`movie__searchbox`);
+const searchbar = document.getElementById('searchbar');
+
+// searchBox.addEventListener("submit", (event) => {
+//     const searchBarValue = searchbar.value; // get the value of the searchbar after submit
+//     console.log(searchBarValue); //check the input value
+//     event.preventDefault(); //prevent refresh
+//     // Store the value in the localStorage then input it in the const searchKey then passsed it in the main();
+//     localStorage.setItem("key", searchBarValue); 
+//     // const searchKey = localStorage.getItem("key");
+//     // main(searchKey);
+//     // to show the searchBarValue in the searchTitle
+//     // searchTitle.innerHTML = searchBarValue;
+//     // console.log(searchbar.value)
+// })
+
+
+// function click () {
+
+//     console.log(window.location)
+//     window.location.href = `${window.location.origin}/movies/movies.html`
+// }
+
+// check when the form is submitted
+searchBox.addEventListener("submit", (event) => {
+  const searchBarValue = document.getElementById("searchbar").value;
+  event.preventDefault();
+  window.location.href = `${window.location.origin}/movies/movieList.html?value=${searchBarValue}`;
+  localStorage.setItem('key', searchBarValue);
+});
+
+
+// tvshows
+const swiper1 = document.getElementById('swiper1');
+const swiper2 = document.getElementById('swiper2');
+
+// async function main (event) {
+//     const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+//      const search = await fetch(`${url}`);
+//     const data = await search.json();
+//     // console.log(data.Search)
+//     swiper1.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+// }
+
+
+// function swiperHTML (movie) {
+//     return `  <div class="popular__show--poster swiper-slide">
+//     <figure class="poster__img">
+//         <img src="${movie.Poster}" alt="">
+//     </figure>
+//     <figcaption class="poster__info">
+//         <h3 class="poster__title">${movie.Title}</h3>
+//         <p class="poster__year">${movie.Year}</p>
+//     </figcaption>
+// </div>`
+// }
+
 
 new Swiper('.swiper', {
     slidesPerView: 5,
@@ -38,12 +95,26 @@ new Swiper('.swiper', {
     keyboard: true,
 });
 
+
+
+
+
+setTimeout(() => {
+    main('suits');
+});
+
+
+
+
+
 function openMenu() {
     document.body.classList += "menu--open";
 }
 function closeMenu() {
     document.body.classList.remove('menu--open');
 }
+
+
 // async function main (event) {
 //     const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
 //      const search = await fetch(`${url}`);
@@ -71,11 +142,6 @@ function closeMenu() {
        
 
 
-// function browsingMovies(event){
-//     localStorage.setItem("key", event.target.search.value);
-
-//     console.log(event.target.search.value)
-// }
 
 
 // new Swiper('#swiper-2', {
