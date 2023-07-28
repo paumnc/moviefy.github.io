@@ -30,7 +30,10 @@ searchBox.addEventListener("submit", (event) => {
 // redirecting to another page and getting the value of the searchBox
 //   window.location.href = `${window.location.origin}/movies/movies.html?value=${searchBarValue}`;
 // console.log(window.location)
-  window.location.href = `${window.location.origin}/movies/movies.html`;
+//link to movies.html for production offline
+//   window.location.href = `${window.location.origin}/movies/movies.html`;
+// link to movies.html for github page
+  window.location.href = `${window.location.origin}/moviefy.github.io/movies/movies.html`;
 });
 
 
@@ -91,9 +94,7 @@ main4('love');
 async function main5 (event) {
     const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
      const search = await fetch(`${url}`);
-    const data = await search.json();
-
-    
+    const data = await search.json(); 
     // console.log(data.Search)
     swiper5.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
 }
