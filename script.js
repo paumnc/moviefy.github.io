@@ -25,11 +25,11 @@ const searchbar = document.getElementById('searchbar');
 searchBox.addEventListener("submit", (event) => {
   const searchBarValue = document.getElementById("searchbar").value;
   event.preventDefault();
+  //storing the value of the searchbox and get it on moviescript.js
+    localStorage.setItem('key', searchBarValue);
 // redirecting to another page and getting the value of the searchBox
 //   window.location.href = `${window.location.origin}/movies/movies.html?value=${searchBarValue}`;
   window.location.href = `${window.location.origin}/movies/movies.html`;
-//storing the value of the searchbox and get it on moviescript.js
-  localStorage.setItem('key', searchBarValue);
 });
 
 
