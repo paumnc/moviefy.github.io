@@ -17,7 +17,6 @@ const searchbar = document.getElementById('searchbar');
 
 
 // function click () {
-
 //     console.log(window.location)
 //     window.location.href = `${window.location.origin}/movies/movies.html`
 // }
@@ -26,7 +25,10 @@ const searchbar = document.getElementById('searchbar');
 searchBox.addEventListener("submit", (event) => {
   const searchBarValue = document.getElementById("searchbar").value;
   event.preventDefault();
-  window.location.href = `${window.location.origin}/movies/movieList.html?value=${searchBarValue}`;
+// redirecting to another page and getting the value of the searchBox
+//   window.location.href = `${window.location.origin}/movies/movies.html?value=${searchBarValue}`;
+  window.location.href = `${window.location.origin}/movies/movies.html`;
+//storing the value of the searchbox and get it on moviescript.js
   localStorage.setItem('key', searchBarValue);
 });
 
@@ -34,39 +36,97 @@ searchBox.addEventListener("submit", (event) => {
 // tvshows
 const swiper1 = document.getElementById('swiper1');
 const swiper2 = document.getElementById('swiper2');
+const swiper3 = document.getElementById('swiper3');
+const swiper4 = document.getElementById('swiper4');
+const swiper5 = document.getElementById('swiper5');
 
-// async function main (event) {
-//     const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
-//      const search = await fetch(`${url}`);
-//     const data = await search.json();
-//     // console.log(data.Search)
-//     swiper1.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
-// }
+async function main (event) {
+    const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+     const search = await fetch(`${url}`);
+    const data = await search.json();
+    // console.log(data.Search)
+    swiper1.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+}
+
+main('legend');
 
 
-// function swiperHTML (movie) {
-//     return `  <div class="popular__show--poster swiper-slide">
-//     <figure class="poster__img">
-//         <img src="${movie.Poster}" alt="">
-//     </figure>
-//     <figcaption class="poster__info">
-//         <h3 class="poster__title">${movie.Title}</h3>
-//         <p class="poster__year">${movie.Year}</p>
-//     </figcaption>
-// </div>`
-// }
+async function main2 (event) {
+    const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+     const search = await fetch(`${url}`);
+    const data = await search.json();
+
+    
+    // console.log(data.Search)
+    swiper2.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+}
+
+main2('game');
+
+async function main3 (event) {
+    const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+     const search = await fetch(`${url}`);
+    const data = await search.json();
+
+    
+    // console.log(data.Search)
+    swiper3.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+}
+
+main3('once');
+
+async function main4 (event) {
+    const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+     const search = await fetch(`${url}`);
+    const data = await search.json();
+
+    
+    // console.log(data.Search)
+    swiper4.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+}
+
+main4('love');
+
+async function main5 (event) {
+    const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+     const search = await fetch(`${url}`);
+    const data = await search.json();
+
+    
+    // console.log(data.Search)
+    swiper5.innerHTML = data.Search.map((movie) => swiperHTML(movie)).join("");
+}
+
+main5('hunger');
+
+
+function swiperHTML (movie) {
+    return `  <div class="popular__show--poster swiper-slide">
+    <figure class="poster__img">
+        <img src="${movie.Poster}" alt="">
+    </figure>
+    <figcaption class="poster__info">
+        <h3 class="poster__title">${movie.Title}</h3>
+        <p class="poster__year">${movie.Year}</p>
+    </figcaption>
+</div>`
+}
+
+// setTimeout(() => {
+//     main('suits');
+// });
 
 
 new Swiper('.swiper', {
-    slidesPerView: 5,
+    slidesPerView: 7,
     spaceBetween: 12,
     breakpoints: {
-        1400: {
-            slidesPerView: 4, 
-            spaceBetween: 0,
+        3000: {
+            slidesPerView: 7
         },
-        1200: {
-            slidesPerView: 3,
+        1400: {
+            slidesPerView: 5, 
+            spaceBetween: 0,
         },
         800: {
             slidesPerView: 3,
@@ -75,7 +135,7 @@ new Swiper('.swiper', {
             slidesPerView: 2,
         },
         400: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
         }
     },
     centeredSlides: true,
@@ -88,20 +148,23 @@ new Swiper('.swiper', {
         clickable: true
     },
     loop: true,
+    freeMode: {
+        enabled: true,
+        sticky: true,
+    },
     navigation: {
       nextEl: '.nav-next',
       prevEl: '.nav-prev',
     },
     keyboard: true,
+    scrollBar: {
+        el: '.swiper-scrollbar',
+    },
 });
 
 
 
 
-
-setTimeout(() => {
-    main('suits');
-});
 
 
 
@@ -115,33 +178,7 @@ function closeMenu() {
 }
 
 
-// async function main (event) {
-//     const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
-//      const search = await fetch(`${url}`);
-//     const data = await search.json();
-//     // console.log(data.Search)
-   
-//     movieListEl.innerHTML = data.Search.map((movie) => movieHTML(movie)).join("");
-
-// }
-
-// main();
-
-// function movieHTML (details) {
-//     return `<div class="shows__content">
-//         <figure class="shows__poster">
-//             <img src="${details.Poster}" alt="" class="poster">
-//         </figure>
-//            <div class="poster__description">
-//             <h4 class="poster__title">${details.Title}</h4>
-//             <p class="poster__year">${details.Year}</p>
-//         </div>
-//     </div>
-//         `
-//     }
        
-
-
 
 
 // new Swiper('#swiper-2', {

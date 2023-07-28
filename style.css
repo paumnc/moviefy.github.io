@@ -354,7 +354,8 @@ POPULAR SHOWS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 56px;
+    margin-bottom: 36px;
 
 }
 
@@ -381,8 +382,6 @@ POPULAR SHOWS
 
 
 .poster__img {
-    border-radius: 20px;
-    margin-bottom: 12px;
     transition: all 300ms ease;
 }
 
@@ -391,9 +390,13 @@ POPULAR SHOWS
 }
 
 .poster__info {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
+}
+
+.poster__title {
+ text-align: center;
 }
 
 
@@ -408,18 +411,24 @@ SWIPER
     height: 100%;
 }
 
+
+.swiper-wrapper {
+    max-height: 1000px;
+}
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
 .swiper-slide img {
-    display: block;
+    max-height: 915px;
     width: 100%;
-    height: 400px;
     object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 20px;
 }
 
 .swiper-custom-nav {
@@ -463,9 +472,12 @@ justify-content: center;
     position: relative;
 }
 
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
 background-color: var(--lightest-yellow) !important;
-}
+} */
+
+
+
 
 
 /*
@@ -568,16 +580,28 @@ display: none;
 
 
 @media only screen and (max-width: 2400px) {
+    .popular__show--titlebar {
+        margin-bottom: 12px;
+    }
+    .popular__show--title {
+        font-size: 36px;
+    }
     header {
         margin-top: -25%;
     }
     #genres {
         margin-top: 10%;
     }
+
+    .poster__info {
+        display: flex;
+    }
+ 
 }
 
 
 @media only screen and (max-width: 1500px) {
+   
     header {
         margin-top: -35%;
     }
@@ -618,13 +642,15 @@ p, .header__part2--para {
     flex-direction: column;
 }
 
+
+
 }
 
 
 @media only screen and (max-width: 950px) {
-    h4 {
-        font-size: 18px;
-    }
+    .popular__show--title {
+        font-size: 28px;
+       }
     .header__title {
         font-size: 42px;
     }
@@ -682,6 +708,7 @@ justify-content: space-evenly;
     .nav__links--hidden {
         display: none;
     }
+
     .btn_menu {
         display: block;
         margin-right: 12px;
@@ -695,9 +722,15 @@ justify-content: space-evenly;
         visibility: visible;
         opacity:1;
     }
-
+  
     .nav__link {
         font-size: 36px;
+    }
+
+
+    .swiper-slide img {
+        max-height: 400px;
+ 
     }
 
 }
@@ -705,11 +738,11 @@ justify-content: space-evenly;
 
 
 @media only screen and (max-width: 690px) {
-  
+   
     .header__title {
         font-size: 24px;
     }
-    .header__sub-title, h4 {
+    .header__sub-title {
         font-size: 16px;
     }
     .header__top10 {
