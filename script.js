@@ -29,6 +29,7 @@ searchBox.addEventListener("submit", (event) => {
     localStorage.setItem('key', searchBarValue);
 // redirecting to another page and getting the value of the searchBox
 //   window.location.href = `${window.location.origin}/movies/movies.html?value=${searchBarValue}`;
+// console.log(window.location)
   window.location.href = `${window.location.origin}/movies/movies.html`;
 });
 
